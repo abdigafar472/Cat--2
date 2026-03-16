@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechZone Electronics Online Store</title>
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f4f6f8;
+}
+
+/* Header */
+header{
+background:#1e88e5;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Navigation */
+nav{
+background:#333;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav ul li{
+margin:0;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+}
+
+nav ul li a:hover{
+background:#555;
+}
+
+/* Main container */
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+/* Table styling */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+background:white;
+}
+
+th, td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#1e88e5;
+color:white;
+}
+
+/* Form styling */
+form{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:5px;
+}
+
+label{
+font-weight:bold;
+display:block;
+margin-top:10px;
+}
+
+input, select, textarea{
+width:100%;
+padding:8px;
+margin-top:5px;
+box-sizing:border-box;
+}
+
+.radio-group{
+margin-top:5px;
+}
+
+button{
+margin-top:15px;
+padding:10px;
+width:100%;
+background:#1e88e5;
+border:none;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1565c0;
+}
+
+/* Footer */
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>TechZone Electronics Online Store</h1>
+<p>Welcome to TechZone Electronics</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#order">Order Form</a></li>
+<li><a href="#contact">Contact Us</a></li>
+</ul>
+</nav>
+
+<div class="container">
+
+<!-- Products Table -->
+<section id="products">
+<h2>Available Products</h2>
+
+<table border="1">
+<tr>
+<th>Product ID</th>
+<th>Product Name</th>
+<th>Category</th>
+<th>Price (Ksh)</th>
+</tr>
+
+<tr>
+<td>P001</td>
+<td>Laptop</td>
+<td>Computers</td>
+<td>65000</td>
+</tr>
+
+<tr>
+<td>P002</td>
+<td>Smartphone</td>
+<td>Mobile Devices</td>
+<td>32000</td>
+</tr>
+
+<tr>
+<td>P003</td>
+<td>Wireless Mouse</td>
+<td>Accessories</td>
+<td>1500</td>
+</tr>
+
+<tr>
+<td>P004</td>
+<td>External Hard Drive</td>
+<td>Storage</td>
+<td>8000</td>
+</tr>
+
+</table>
+</section>
+
+<!-- Order Form -->
+<section id="order">
+<h2>Customer Order Form</h2>
+
+<form>
+
+<label>Customer Name</label>
+<input type="text" name="customerName" required>
+
+<label>Email Address</label>
+<input type="email" name="email" required>
+
+<label>Product</label>
+<select name="product">
+<option>Laptop</option>
+<option>Smartphone</option>
+<option>Wireless Mouse</option>
+<option>External Hard Drive</option>
+</select>
+
+<label>Quantity</label>
+<input type="number" name="quantity" min="1" required>
+
+<label>Delivery Address</label>
+<textarea rows="4"></textarea>
+
+<label>Payment Method</label>
+<div class="radio-group">
+<input type="radio" name="payment"> M-Pesa<br>
+<input type="radio" name="payment"> Card<br>
+<input type="radio" name="payment"> Cash on Delivery
+</div>
+
+<button type="submit">Submit Order</button>
+
+</form>
+</section>
+
+</div>
+
+<footer id="contact">
+<p>Contact email: info@techzone.co.ke</p>
+<p>© 2026 TechZone Electronics. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
